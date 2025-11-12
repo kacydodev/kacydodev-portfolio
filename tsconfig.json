@@ -1,6 +1,8 @@
 {
 	"compilerOptions": {
-		"allowJs": true
+		"moduleResolution": "node",
+		"allowJs": true,
+		"baseUrl": "src/"
 	},
 	"files": [],
 	"references": [

@@ -10,6 +10,9 @@ export default function App() {
 				<SectionHeader />
 				<Button title='primary button' />
 				<Button title='outline button' variants='outline' />
+
+				<i className='devicon-zustand-plain'></i>
+				<i className='devicon-devicon-plain'></i>
 			</section>
 		</>
 	);

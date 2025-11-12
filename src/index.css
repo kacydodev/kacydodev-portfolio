@@ -18,4 +18,8 @@
 	h3 {
 		@apply font-mono tracking-tighter;
 	}
+
+	i {
+		@apply text-6xl;
+	}
 }
