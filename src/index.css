@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Atkinson Hyperlegible', sans-serif;
+	--font-mono: 'Atkinson Hyperlegible Mono', monospace;
+}
+
+@layer base {
+	body {
+		@apply font-sans;
+		@apply border border-cyan-200;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply font-mono tracking-tighter;
+	}
+}
