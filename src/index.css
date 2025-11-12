@@ -5,11 +5,12 @@
 	--font-sans: 'Atkinson Hyperlegible', sans-serif;
 	--font-mono: 'Atkinson Hyperlegible Mono', monospace;
 	--color-primary: oklch(0.705 0.213 47.604);
+	--color-primary-lighter: oklch(0.75 0.183 55.934);
 }
 
 @layer base {
 	body {
-		@apply font-sans;
+		@apply font-sans bg-white dark:bg-neutral-900 dark:text-neutral-100;
 		@apply border border-cyan-200;
 	}
 
@@ -19,7 +20,29 @@
 		@apply font-mono tracking-tighter;
 	}
 
+	h2 {
+		@apply text-2xl;
+	}
+
+	p {
+		@apply dark:text-neutral-100;
+	}
+
 	i {
-		@apply text-6xl;
+		@apply text-7xl text-neutral-500;
+	}
+}
+
+.scroll-effect {
+	will-change: transform;
+	animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
 	}
 }

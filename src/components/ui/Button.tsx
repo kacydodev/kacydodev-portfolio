@@ -16,7 +16,7 @@ export default function Button({
 			return (
 				<button
 					{...props}
-					className='px-4 py-2 border-2 border-primary rounded-md text-primary uppercase font-mono'
+					className='px-4 py-2 border-2 border-primary hover:border-primary-lighter cursor-pointer rounded-md text-primary hover:text-primary-lighter uppercase font-mono'
 				>
 					{title}
 				</button>
@@ -26,7 +26,7 @@ export default function Button({
 			return (
 				<button
 					{...props}
-					className='px-4 py-2 bg-primary rounded-md text-white uppercase font-mono'
+					className='px-4 py-2 bg-primary hover:bg-primary-lighter cursor-pointer rounded-md text-white uppercase font-mono'
 				>
 					{title}
 				</button>
