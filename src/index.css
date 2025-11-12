@@ -4,6 +4,7 @@
 @theme {
 	--font-sans: 'Atkinson Hyperlegible', sans-serif;
 	--font-mono: 'Atkinson Hyperlegible Mono', monospace;
+	--color-primary: oklch(0.705 0.213 47.604);
 }
 
 @layer base {
