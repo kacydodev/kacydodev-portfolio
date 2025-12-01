@@ -6,6 +6,7 @@
 	--font-mono: 'Atkinson Hyperlegible Mono', monospace;
 	--color-primary: oklch(0.705 0.213 47.604);
 	--color-primary-lighter: oklch(0.75 0.183 55.934);
+	--border-
 }
 
 @layer base {

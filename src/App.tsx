@@ -11,6 +11,7 @@ export default function App() {
 				<SectionHeader />
 				<Button title='primary button' />
 				<Button title='outline button' variants='outline' />
+				<Button title='link button' variants='link' />
 			</section>
 
 			<TechStack />

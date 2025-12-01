@@ -16,8 +16,19 @@ export default function Button({
 			return (
 				<button
 					{...props}
-					className='px-4 py-2 border-2 border-primary hover:border-primary-lighter cursor-pointer rounded-md text-primary hover:text-primary-lighter uppercase font-mono'
+					className='px-1.75 py-0.75 border-[1.5px] bg-neutral-300 cursor-pointer rounded-md uppercase font-mono text-sm'
 				>
+					{title}
+				</button>
+			);
+
+		case 'link':
+			return (
+				<button
+					{...props}
+					className='px-1.75 py-0.75 cursor-pointer rounded-md uppercase font-mono text-sm hover:underline hover:underline-offset-4'
+				>
+					{/* TODO: install phosphoricons for arrow right icon */}
 					{title}
 				</button>
 			);
@@ -26,7 +37,7 @@ export default function Button({
 			return (
 				<button
 					{...props}
-					className='px-4 py-2 bg-primary hover:bg-primary-lighter cursor-pointer rounded-md text-white uppercase font-mono'
+					className='px-1.75 py-1.25 border-[1.5px] bg-black text-white cursor-pointer rounded-md uppercase font-mono text-sm'
 				>
 					{title}
 				</button>
