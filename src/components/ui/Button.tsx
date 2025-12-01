@@ -1,14 +1,17 @@
+import { ArrowRightIcon, ArrowSquareOutIcon } from '@phosphor-icons/react';
 import type React from 'react';
 
 interface ButtonInterface
 	extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	title: string;
 	variants?: 'default' | 'outline' | 'link';
+	isExternal?: boolean;
 }
 
-export default function Button({
+export function Button({
 	title,
 	variants = 'default',
+	isExternal = false,
 	...props
 }: ButtonInterface) {
 	switch (variants) {
@@ -26,10 +29,14 @@ export default function Button({
 			return (
 				<button
 					{...props}
-					className='px-1.75 py-0.75 cursor-pointer rounded-md uppercase font-mono text-sm hover:underline hover:underline-offset-4'
+					className='mx-1.75 my-0.75 cursor-pointer uppercase font-mono text-sm hover:border-b'
 				>
-					{/* TODO: install phosphoricons for arrow right icon */}
-					{title}
+					{title}{' '}
+					{isExternal ? (
+						<ArrowSquareOutIcon weight='bold' />
+					) : (
+						<ArrowRightIcon weight='bold' />
+					)}
 				</button>
 			);
 

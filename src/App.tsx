@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Button from './components/ui/Button';
+import { Button } from './components/ui/Button';
 import SectionHeader from './components/ui/SectionHeader';
 import TechStack from './components/ui/TechStack';
 
