@@ -19,7 +19,7 @@ export function Button({
 			return (
 				<button
 					{...props}
-					className='px-1.75 py-0.75 border-[1.5px] bg-neutral-300 cursor-pointer rounded-md uppercase font-mono text-sm'
+					className='px-1.75 py-0.75 border-[1.5px] bg-neutral-300 dark:bg-neutral-700 dark:py-1.25 dark:border-0 cursor-pointer rounded-md uppercase font-mono text-sm'
 				>
 					{title}
 				</button>
@@ -44,7 +44,7 @@ export function Button({
 			return (
 				<button
 					{...props}
-					className='px-1.75 py-1.25 border-[1.5px] bg-black text-white cursor-pointer rounded-md uppercase font-mono text-sm'
+					className='px-1.75 py-1.25 border-[1.5px] bg-black dark:bg-white dark:text-black dark:border-0 text-white cursor-pointer rounded-md uppercase font-mono text-sm'
 				>
 					{title}
 				</button>
