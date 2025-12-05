@@ -20,6 +20,7 @@ export function Button({
 			'mx-1.75 my-0.75 hover:border-b': variants === 'link',
 			'px-1.75 py-0.75 border-[1.5px] bg-neutral-300 dark:bg-neutral-700 dark:py-1.25 dark:border-0':
 				variants === 'outline',
+			'[&_svg]:inline-block [&_svg]:mb-0.75 [&_svg]:-ml-px': true, // Fix icon's spacing
 		},
 		props.className
 	);

@@ -1,4 +1,6 @@
+import { ArrowRightIcon, ArrowSquareOutIcon } from '@phosphor-icons/react';
 import Header from './components/Header';
+import { Button } from './components/ui/Button';
 import { Card } from './components/ui/Card';
 import SectionHeader from './components/ui/SectionHeader';
 import TechStack from './components/ui/TechStack';
@@ -26,6 +28,17 @@ export default function App() {
 						culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</Card>
+			</section>
+
+			<section>
+				<Button>Primary Button</Button>
+				<Button variants='outline'>Outline Button</Button>
+				<Button variants='link'>
+					Link Button <ArrowRightIcon weight='bold' />
+				</Button>
+				<Button variants='link'>
+					External Link <ArrowSquareOutIcon weight='bold' />
+				</Button>
 			</section>
 
 			<TechStack />
